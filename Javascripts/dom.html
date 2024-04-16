@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <h1 id="para"></h1> -->
+
+<h1 id="name">Pooja thakur</h1>
+<button onclick="myfunct()">Remove Name</button>
+
+
+
+
+<ul id="skills">
+    <li>html</li>
+    <li>js</li>
+    <li >css</li>
+    <button onclick="myfun()">remove</button>
+    <ul>
+        <li>React</li>
+        <li id="njs">Node</li>
+        <li>express</li>
+        <li>mongodb</li>
+    </ul>
+    <button onclick="myfunc()">remove one</button>
+</ul>
+
+    <script>
+// var element=document.getElementById("para")
+// element.innerHTML="Pooja thakur"
+// console.log(element)
+
+// const ele=document.createElement("h1")
+// ele.innerHTML="Gyanendra thakur";
+// document.body. appendChild(ele)
+// console.log(ele)
+
+function myfunct(){
+ let ele=document.getElementById('name')
+ console.log(ele)
+ ele.remove()
+
+}
+
+
+
+
+
+
+
+function myfun(){
+const skillble=document.getElementById("skills")
+console.log(skillble)
+skillble.removeChild(skillble.firstElementChild)
+}
+
+function myfunc(){
+    const elejs=document.getElementById('njs')
+
+    console.log(elejs);
+    elejs.parentNode.removeChild(elejs)
+}
+
+
+    </script>
+</body>
+</html>

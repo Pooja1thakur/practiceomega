@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .headingpooja{
+            color: red;
+            background-color: rgb(183, 255, 0);
+        }
+    </style>
+</head>
+<body>
+    <!-- <h1 id="heading">Pooja Thakur only</h1> -->
+<p>Pooja</p>
+<p>Gyan</p>
+<p>Rohit</p>
+<p>Bittu</p>
+
+
+
+
+<script>
+
+
+
+   // document.getElementById("heading").setAttribute("class","headingpooja")
+
+
+ const ele=  document.getElementsByTagName("p")
+   ele[2].innerHTML="abcdef";
+ele[1].style.backgroundColor="green";
+for(let i=0;i<ele.length;i++){
+    ele[i].style.backgroundColor="green"; 
+}
+
+
+   console.log(ele.length);
+</script>
+</body>
+
+</html>
